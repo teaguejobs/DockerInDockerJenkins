@@ -1,13 +1,13 @@
 pipeline {
-   agent {
-      'Dockerfile true'
+          agent {
+                 'Dockerfile true'
    }
 
-   stages {
-      stage('Build') {
-         steps {
-                sh 'node --version'
-                sh 'pwd'
+          stages {
+                  stage('Build') {
+                          steps {
+                                  sh 'node --version'
+                                  sh 'pwd'
          }
       }
    }
